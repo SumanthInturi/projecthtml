@@ -1,194 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Techigai html</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <style>
-    marquee{
-      font-size: 40px;
-      font-display: Comic sans MS;
-      color: rgb(53, 17, 212);
-      background: rgb(12, 219, 119);
-      text-shadow: 3px 4px 3px rgb(233, 114, 16);
-      margin: 0px;
-      box-sizing: border-box;
-    }
-    body{
-      background-size: cover;
-      margin: 0px;
-      padding: 0px;
-    }
  
-    header{
-      font-size: 40px;
-      height: 60px;
-      font-display: Comic sans MS;
-      color: rgb(53, 17, 212);
-      background: rgb(12, 219, 119);
-      text-shadow: 3px 4px 3px rgb(233, 114, 16);
-      margin: 0px;
-      box-sizing: border-box;
-      text-align: center;
-    }
-    table{
-      background-color: #d6bdbd4d;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      backdrop-filter: blur(5px);
-      
-      
-    }a{
-      color: black;
-    }
-    td:hover,a:hover{
-      background-color: rgb(62, 55, 32);
-      color: beige;
-    }
-    td{
-        color: black;
-        background-color: beige;
-        border-radius: 7px;
-        border-bottom: 1px solid  rgb(62, 55, 32);
-        backdrop-filter: blur(2px);
-      
-    }
-    video{
-      background-size: cover
-    }
-    footer{
-      background-color: rgb(53, 52, 50);
-      color: wheat;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    span{
-      font-size: 1.2em;
-      font-variant: small-caps;
-      background-color: pink;
-      padding: 15px 5%;
-      display: inline-block;
-
-
-    }
-    span:hover{
-      background-color: black;
-      color:rgb(255, 255, 255);
-      transform: scale(1.03);
-      text-shadow: 3px 2px 2px rgb(255, 0, 0);
-    }
-    nav::-webkit-scrollbar {
-  display: none;
-}
-main::-webkit-scrollbar {
-  display: none;
-}
-section{
-  background-color: rgba(0, 0, 0, 0.237);
-  backdrop-filter: blur(5px);
-}
-main {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
-}
-ul{
-  display: flex;
-  list-style: none;
-}
-
-nav {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-    nav{
-      background-color: pink;
-      overflow: scroll;
-      display: flex;
-    }
-.htmltags{
-  font-style: italic;
-}
-.video{
-  backdrop-filter: blur(5px);
-}
-  </style>
-</head>
-<body>
-  <header>
-    Techigai
-  </header>
-  <nav><span>HTML</span><span>CSS3</span><span>Javascript</span><span>MYSQL</span><span>Reactjs</span><span>Angularjs</span></nav>
-  <div class="video" style="position: relative;background-color: rgba(0, 0, 0, 0.651);height: 100vh;position: absolute;z-index:-1;width: 100%;">
-    <video style="position: absolute;width:100%;z-index:-2;height: 100%;"autoplay muted loop id="myVideo" >
-    <source src="vd.mp4" type="video/mp4">
-  </video></div>
-  <!-- <video style="position: absolute;top:65vh;width:100%;z-index:-1;height: 60vh;"autoplay muted loop id="myVideo" >
-    <source src="vd.mp4" type="video/mp4">
-  </video> -->
-  <main style="display: flex;">
-    <aside style="min-width: 30%;"><table >
-      <tr>
-        <td><a href="https://www.javatpoint.com/html-tutorial" style="text-decoration:none;">Introduction to HTML<a></td>
-      </tr>
-      <tr>
-        <td>What is HTML</td>
-      </tr>
-      <tr class="htmltags" id="htmltags">
-        <td>HTML tags</td>
-      </tr>
-      <tr>
-        <td>HTML Attribute</td>
-      </tr>
-      <tr>
-        <td>HTML Heading</td>
-      </tr>
-      <tr>
-        <td>HTML Formating</td>
-      </tr>
-      <tr>
-        <td>HTML Table</td>
-      </tr>
-      <tr>
-        <td>HTML List</td>
-      </tr>
-      <tr>
-        <td>HTML Images</td>
-      </tr>
-      <tr>
-        <td>HTML Forms</td>
-      </tr>
-      <tr>
-        <td>HTML ids</td>
-      </tr>
-      <tr>
-        <td>HTML Classes</td>
-      </tr>
-      <tr>
-        <td>HTML Layout</td>
-      </tr>
-      <tr>
-        <td>HTML Filepath</td>
-      </tr>
-      <tr>
-        <td>HTML Global Attribute</td>
-      </tr>
-      <tr>
-        <td>HTML Local Attribute</td>
-      </tr>
-    </table></aside>
-    <main  style="height:100vh;overflow:scroll;width: 100%;">
-      <section  style="box-sizing: border-box; width:95%;color: white;padding:10px 30px;border:2px solid wheat;border-radius:30px;margin-top:5px; margin-left: 10px;">
-        “I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.”
-      
-    </section>
-   
-    </main>
-  </main>
-  
-  
-  <!-- <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=techigai&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 400px;"></iframe><a href="https://fnftest.net" style="display:none">FNF Test Unblocked</a><a href="https://www.jixplay.com/indiegames/" style="display:none">indie games</a><a href="https://fnfmod.net" style="display:none">fnf mods</a><style></style><style>.gmap_canvas{overflow:hidden;background:none!important;}</style></div></div> -->
-  <footer><b>Techigai Private Limited		&#8482;</b><br><p style="font-size: 10px ;color: aliceblue;">Located in: Galaxy by Aurobindo Realty<br>
-    Address: Wing, B, 9th Floor, Aurobindo Galaxy, Knowledge City Rd, TSIIC, HITEC City, Hyderabad, Telangana 500081</p></footer> 
-</body>
-</html>
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <title>Form in HTML</title>  
+</head>  
+<body>  
+    <h2>Registration form</h2>  
+   <form>  
+    <fieldset>  
+       <legend>User personal information</legend>  
+       <label>Enter your full name</label><br>  
+       <input type="text" name="name"><br>  
+        <label>Enter your email</label><br>  
+        <input type="email" name="email"><br>  
+        <label>Enter your password</label><br>  
+        <input type="password" name="pass"><br>  
+        <label>confirm your password</label><br>  
+        <input type="password" name="pass"><br>  
+        <br><label>Enter your gender</label><br>  
+        <input type="radio" id="gender" name="gender" value="MALE"/>Male  <br>  
+        <input type="radio" id="gender" name="gender" value="female"/>Female <br/>    
+        <input type="radio" id="gender" name="gender" value="others"/>others <br/>   
+         <br>Enter your Address:<br>  
+        <textarea></textarea><br>  
+        <input type="submit" value="sign-up">  
+    </fieldset>  
+ </form>  
+</body>  
+</html>  
