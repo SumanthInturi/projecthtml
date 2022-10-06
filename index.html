@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Techigai html</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
     marquee{
       font-size: 40px;
@@ -14,7 +14,6 @@
       box-sizing: border-box;
     }
     body{
-      background-image: url("bg.jpg");
       background-size: cover;
       margin: 0px;
       padding: 0px;
@@ -36,6 +35,7 @@
       height: 100vh;
       width: 100%;
       text-align: center;
+      backdrop-filter: blur(5px);
       
       
     }a{
@@ -50,7 +50,11 @@
         background-color: beige;
         border-radius: 7px;
         border-bottom: 1px solid  rgb(62, 55, 32);
+        backdrop-filter: blur(2px);
       
+    }
+    video{
+      background-size: cover
     }
     footer{
       background-color: rgb(53, 52, 50);
@@ -115,6 +119,9 @@ nav {
 .htmltags{
   font-style: italic;
 }
+.video{
+  backdrop-filter: blur(5px);
+}
   </style>
 </head>
 <body>
@@ -122,6 +129,13 @@ nav {
     Techigai
   </header>
   <nav><span>HTML</span><span>CSS3</span><span>Javascript</span><span>MYSQL</span><span>Reactjs</span><span>Angularjs</span></nav>
+  <div class="video" style="position: relative;background-color: rgba(0, 0, 0, 0.651);height: 100vh;position: absolute;z-index:-1;width: 100%;">
+    <video style="position: absolute;width:100%;z-index:-2;height: 100%;"autoplay muted loop id="myVideo" >
+    <source src="vd.mp4" type="video/mp4">
+  </video></div>
+  <!-- <video style="position: absolute;top:65vh;width:100%;z-index:-1;height: 60vh;"autoplay muted loop id="myVideo" >
+    <source src="vd.mp4" type="video/mp4">
+  </video> -->
   <main style="display: flex;">
     <aside style="min-width: 30%;"><table >
       <tr>
@@ -181,6 +195,7 @@ nav {
    
     </main>
   </main>
+  
   
   <!-- <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=techigai&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 400px;"></iframe><a href="https://fnftest.net" style="display:none">FNF Test Unblocked</a><a href="https://www.jixplay.com/indiegames/" style="display:none">indie games</a><a href="https://fnfmod.net" style="display:none">fnf mods</a><style></style><style>.gmap_canvas{overflow:hidden;background:none!important;}</style></div></div> -->
   <footer><b>Techigai Private Limited		&#8482;</b><br><p style="font-size: 10px ;color: aliceblue;">Located in: Galaxy by Aurobindo Realty<br>
