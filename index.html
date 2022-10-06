@@ -24,7 +24,6 @@
  
     header{
       font-size: 40px;
-      font-family: kakarot;
       height: 60px;
       font-display: Comic sans MS;
       color: white;
@@ -32,6 +31,8 @@
       margin: 0px;
       box-sizing: border-box;
       text-align: center;
+      background:linear-gradient(green,black,black,black,green);
+      
     }
     table{
       height: 100vh;
@@ -54,11 +55,7 @@
         backdrop-filter: blur(2px);
       color: white;
     }
-    video{
-      background:url("body-bg.png");
-      background-size: cover;
-      height: 100vh;
-    }
+
     footer{
       background-color: rgb(53, 52, 50);
       color: wheat;
@@ -112,7 +109,8 @@ ul{
 /* Hide scrollbar for IE, Edge and Firefox */
 nav {
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width: none;
+  padding-left: 30px;
 }
     nav{
       background-color: rgb(97, 78, 81);
@@ -126,7 +124,21 @@ nav {
   font-style: italic;
 }
 video{
-  filter:contrast(2);
+      position: absolute;
+      right: 0;
+      z-index: -1;
+}
+@media (min-aspect-ratio :16/9){
+  video{
+    width:100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio :16/9){
+  video{
+    width:auto;
+    height: 100%;
+  }
 }
   </style>
 </head>
@@ -134,8 +146,8 @@ video{
   <header>
     Techigai
   </header>
-  <nav><span>HTML</span><span>CSS3</span><span>Javascript</span><span>MYSQL</span><span>Reactjs</span><span>Angularjs</span></nav>  
-    <video style="position: absolute;width:100%;z-index:-2;height: 100%;"autoplay muted loop id="myVideo" >
+  <nav ><span>HTML</span><span>CSS3</span><span>Javascript</span><span>MYSQL</span><span>Reactjs</span><span>Angularjs</span></nav>  
+    <video autoplay muted loop id="myVideo" >
     <source src="vd.mp4" type="video/mp4">
   </video>
   <!-- <video style="position: absolute;top:65vh;width:100%;z-index:-1;height: 60vh;"autoplay muted loop id="myVideo" >
@@ -200,21 +212,7 @@ video{
    
     </main>
   </main>
-  <fieldset>
-    <legend>Comments</legend>
-  <p>
-    I'm creating a link to
-    <a
-      href="https://www.mozilla.org/en-US/"
-      title="The best place to find more information about Mozilla's
-            mission and how to contribute">the Mozilla homepage</a>.
-  </p>
-  <form>  
-    Enter your address:<br>  
-  <textarea rows="3" cols="30"></textarea> 
-   
-</form>   
-</fieldset>
+  
   <!-- <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=techigai&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 400px;"></iframe><a href="https://fnftest.net" style="display:none">FNF Test Unblocked</a><a href="https://www.jixplay.com/indiegames/" style="display:none">indie games</a><a href="https://fnfmod.net" style="display:none">fnf mods</a><style></style><style>.gmap_canvas{overflow:hidden;background:none!important;}</style></div></div> -->
   <footer><b>Techigai Private Limited		&#8482;</b><br><p style="font-size: 10px ;color: aliceblue;">Located in: Galaxy by Aurobindo Realty<br>
     Address: Wing, B, 9th Floor, Aurobindo Galaxy, Knowledge City Rd, TSIIC, HITEC City, Hyderabad, Telangana 500081</p></footer> 
