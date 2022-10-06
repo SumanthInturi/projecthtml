@@ -4,6 +4,10 @@
   <title>Techigai html</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
+    @font-face {
+      font-family: kakarot;
+      src: url("KaushanScript-Regular.ttf");
+    }
     marquee{
       font-size: 40px;
       font-display: Comic sans MS;
@@ -14,48 +18,46 @@
       box-sizing: border-box;
     }
     body{
-      background-size: cover;
       margin: 0px;
       padding: 0px;
     }
  
     header{
       font-size: 40px;
+      font-family: kakarot;
       height: 60px;
       font-display: Comic sans MS;
-      color: rgb(53, 17, 212);
-      background: rgb(12, 219, 119);
+      color: white;
       text-shadow: 3px 4px 3px rgb(233, 114, 16);
       margin: 0px;
       box-sizing: border-box;
       text-align: center;
-      backdrop-filter: blur;
     }
     table{
-      
       height: 100vh;
       width: 100%;
       text-align: center;
-      backdrop-filter: blur(5px);
       
       
     }a{
       color: black;
     }
     td:hover,a:hover{
-        
-      color: beige;
+      border-bottom: 2px solid white;
+      transform: scale(1.01);
     }
     td{
-        color: white;
-        background: linear-gradient(blue,black,green);
-        border-radius: 7px;
+      border-radius: 30px;
+        color: black;
+        background:linear-gradient(green,black,black,black,green);
         border-bottom: 1px solid  rgb(62, 55, 32);
         backdrop-filter: blur(2px);
-      
+      color: white;
     }
     video{
-      background-size: cover
+      background:url("body-bg.png");
+      background-size: cover;
+      height: 100vh;
     }
     footer{
       background-color: rgb(53, 52, 50);
@@ -67,10 +69,9 @@
     span{
       font-size: 1.2em;
       font-variant: small-caps;
-      background-color: pink;
+      background-color: rgb(0, 0, 0);
       padding: 15px 5%;
       display: inline-block;
-
 
     }
     span:hover{
@@ -78,6 +79,7 @@
       color:rgb(255, 255, 255);
       transform: scale(1.03);
       text-shadow: 3px 2px 2px rgb(255, 0, 0);
+      
     }
     nav::-webkit-scrollbar {
   display: none;
@@ -113,15 +115,18 @@ nav {
   scrollbar-width: none;  /* Firefox */
 }
     nav{
-      background-color: pink;
+      background-color: rgb(97, 78, 81);
       overflow: scroll;
       display: flex;
+      justify-content: center;
+      background-color: black;
+      color:wheat;
     }
 .htmltags{
   font-style: italic;
 }
-.video{
-  backdrop-filter: blur(5px);
+video{
+  filter:contrast(2);
 }
   </style>
 </head>
@@ -129,18 +134,17 @@ nav {
   <header>
     Techigai
   </header>
-  <nav><span>HTML</span><span>CSS3</span><span>Javascript</span><span>MYSQL</span><span>Reactjs</span><span>Angularjs</span></nav>
-  <div class="video" style="position: relative;background-color: rgba(0, 0, 0, 0.651);height: 100vh;position: absolute;z-index:-1;width: 100%;">
+  <nav><span>HTML</span><span>CSS3</span><span>Javascript</span><span>MYSQL</span><span>Reactjs</span><span>Angularjs</span></nav>  
     <video style="position: absolute;width:100%;z-index:-2;height: 100%;"autoplay muted loop id="myVideo" >
     <source src="vd.mp4" type="video/mp4">
-  </video></div>
+  </video>
   <!-- <video style="position: absolute;top:65vh;width:100%;z-index:-1;height: 60vh;"autoplay muted loop id="myVideo" >
     <source src="vd.mp4" type="video/mp4">
   </video> -->
   <main style="display: flex;">
     <aside style="min-width: 30%;"><table >
       <tr>
-        <td><a href="https://www.javatpoint.com/html-tutorial" style="text-decoration:none;">Introduction to HTML<a></td>
+        <td><a style="color: white;text-decoration:none;" href="https://www.javatpoint.com/html-tutorial" style="text-decoration:none;">Introduction to HTML<a></td>
       </tr>
       <tr>
         <td>What is HTML</td>
